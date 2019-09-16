@@ -66,7 +66,7 @@ body {
 .language-modal {
     padding: 0;
 }
-a {
+.language-modal a {
     color: #167ac6;
     text-decoration: none;
 }
@@ -150,6 +150,42 @@ a {
 
 .red-desc {
     width: 50%;
+}
+
+#lang-close:checked{
+    border: 2px solid green;
+    display: none;
+}
+
+.video-title, .video-channel, .video-links {
+    display: flex;
+}
+
+.video-title {
+    flex-direction: column;
+}
+
+.vid-subs {
+    color: #666;
+}
+
+.video-views {
+    color: #666;
+}
+ 
+.video-links a {
+    text-decoration: none;
+    color: #808080;
+}
+
+.video-desc h5 {
+    color: #333;
+    font-size: 1.06rem;
+    line-height: 0;
+}
+
+.video-desc p {
+    margin: 0;
 }
 
 button:hover {
