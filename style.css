@@ -1,6 +1,52 @@
 body {
     position: relative;
+    background-color: #eeeeee;
 }
+
+.page-container {
+    margin: 0 auto;
+    max-width: 800px;
+}
+
+.white-block {
+    background-color: #fff;
+    zborder: 1px solid rgb(201, 201, 201); 
+    box-shadow: 0 2px 2px 1px rgb(201, 201, 201); 
+    padding: 10px;
+    box-sizing: border-box;
+    margin: 10px;
+}
+
+.video-container {
+    width: 100%;
+}
+
+.video-container, .white-block, .waching-area, .comments-container {
+    display: flex;
+}
+
+.white-block, .waching-area, .comments-container {
+    flex-flow: column nowrap;
+}
+
+.waching-area {
+    flex: 1 1 60%;
+}
+
+.actual-video {
+    display: flex;
+    padding: 0;
+}
+
+#main-video {
+    max-width: 100%;
+    flex: 1 1 100%;
+}
+
+.rec-videos {
+    flex: 1 1 40%;
+}
+
 button:hover {
     cursor: pointer;
 }

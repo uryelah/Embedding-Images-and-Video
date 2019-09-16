@@ -9,8 +9,8 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-    <nav class="youtube-nav">
+    <div class="page-container">
+    <nav class="youtube-nav white-block">
         <div class="logo">
             <img src="" alt="logo"/>  
         </div>
@@ -25,7 +25,7 @@
         </div>
     </nav>
 
-    <div class="language-modal">
+    <div class="language-modal white-block">
         <div class="modal-header">
             <img src="" alt="lang-icon">
             <p></p>  
@@ -39,24 +39,26 @@
     <div class="video-container">
         <div class="waching-area">
             <main class="">
-                <div class="actual-video"></div>
-                <section class="video-title"> 
+                <div class="actual-video white-block">
+                    <iframe id="main-video" src="https://www.youtube.com/embed/YN27dQ6afyQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <section class="video-title white-block"> 
                 </section>
-                <article class="video-desc">
+                <article class="video-desc white-block">
                     <h5></h5>
                     <p>lore</p>
                     <input type="radio">
                 </article>
             </main>
-            <div class="comments-container"></div>
+            <div class="comments-container white-block"></div>
         </div>
 
-        <aside>
+        <aside class="rec-videos white-block">
             <!--A bunch of videos-->
         </aside>
     </div>
 
-    <footer>
+    <footer class="white-block">
         <div>
             <img src="#" alt="Youtube Logo"/>
             <button type="button">language</button>
@@ -84,6 +86,7 @@
                 <li></li>
             </ul>
         </nav>
-    </footer>
+    </footer>      
+</div>
 </body>
 </html>
