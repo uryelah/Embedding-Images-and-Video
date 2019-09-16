@@ -51,6 +51,26 @@ body {
     border-left: none;
 }
 
+.modal-header {
+    color: #fff;
+    background-color: #167ac6;
+}
+.modal-header, .modal-body {
+    padding: 0 10px;
+    border: 2px solid #167ac6;
+}
+.modal-body {
+    display: flex;
+    justify-content: space-between;
+}
+.language-modal {
+    padding: 0;
+}
+a {
+    color: #167ac6;
+    text-decoration: none;
+}
+
 .video-container {
     width: 100%;
 }
@@ -82,6 +102,18 @@ body {
 .rec-videos {
     flex: 1 1 40%;
     color: #333333;
+}
+
+.next-videos {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.next-videos div:first-child p {
+    font-weight: bold;
+}
+.next-videos div:last-child p {
+    font-size: 0.8rem;
 }
 
 .red-desc h3 {
