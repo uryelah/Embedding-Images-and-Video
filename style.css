@@ -167,10 +167,43 @@ body {
 
 .vid-subs {
     color: #666;
+    display: flex;
+}
+.user-suscribes > div {
+    display: flex;
+    align-items: center;
+}
+.user-suscribes > div p{
+    padding: 5px;
+}
+.user-suscribes > div p:first-child {
+    background-color: red;
+    color: white;
+    border-top-left-radius: 2px;
+    border-bottom-left-radius: 2px;
+}
+.user-suscribes > div p:last-child {
+    color: #666;
+    border: 1px solid #ccc;
+    background-color: #fafafa;
+    display: inline-block;
+    border-top-right-radius: 2px;
+    border-bottom-right-radius: 2px;
 }
 
 .video-views {
     color: #666;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.video-views > div p {
+    margin: 0;
+}
+
+.video-channel {
+    justify-content: space-between;
 }
  
 .video-links a {
