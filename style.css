@@ -1,0 +1,19 @@
+body {
+    position: relative;
+}
+button:hover {
+    cursor: pointer;
+}
+footer li {
+    display: inline-block;
+}
+footer ul {
+    list-style-type: none;
+    margin: 0;
+}
+.footer-nav-1 {
+    background-color: red;
+}
+.footer-nav-2 {
+    background-color: blue;
+}
