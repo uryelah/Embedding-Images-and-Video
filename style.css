@@ -1,6 +1,9 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap');
+
 body {
     position: relative;
     background-color: #eeeeee;
+    font-family: 'Roboto', sans-serif;
 }
 
 .page-container {
@@ -32,6 +35,23 @@ body {
   max-height: 35px;
 }
 
+.footer-logo {
+    display: inline-block;
+}
+
+.footer-nav-1, .footer-nav-2 {
+    margin: 5px 20px;
+}
+
+.footer-nav li {
+    margin-right: 20px;
+}
+
+.footer-btns {
+    padding: 15px 30px;
+    box-shadow: 0 2px 0 0 #eee;
+}
+
 .search-area {
     flex-basis: 50%;
     display: flex;
@@ -41,6 +61,11 @@ body {
 .icon-area {
   display: flex;
   align-items: center;
+  color: #7f7f7f;
+}
+
+.fas {
+    color: #7f7f7f;    
 }
 
 .icon-area div {
@@ -208,11 +233,18 @@ body {
     height: 48px;
     display: flex;
     flex-direction: column;
+    margin-left: 10px;
+}
+
+.user-suscribes p {
+    margin: 0;
+    font-size: 0.85rem;
 }
 
 .user-suscribes > p {
     margin: 5px;
     margin-top: 0;
+    font-weight: 700;
 }
 
 .user-suscribes > div {
@@ -224,10 +256,16 @@ body {
 }
 .user-suscribes > div p:first-child {
     background-color: red;
+    border: 1px solid red;
     color: white;
     border-top-left-radius: 2px;
     border-bottom-left-radius: 2px;
 }
+
+.user-suscribes p i {
+    font-size: 1rem;
+}
+
 .user-suscribes > div p:last-child {
     color: #666;
     border: 1px solid #ccc;
