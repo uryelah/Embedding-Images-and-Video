@@ -16,7 +16,9 @@
           <img src="./static/youtube-logo.png" alt="logo" />
         </div>
         <div class="search-area">
-          <input type="text" placeholder="Search" /><button type="button"><i class="fas fa-search"></i></button>
+          <input type="text" placeholder="Search" /><button type="button">
+            <i class="fas fa-search"></i>
+          </button>
         </div>
         <div class="icon-area">
           <div>
@@ -31,28 +33,35 @@
         </div>
       </nav>
 
-      <div class="language-modal white-block">
-        <div class="modal-header">
-          <p>
-            <i class=""></i>
-            <!--fontawesome-->
-            Choose your language.
-          </p>
-        </div>
-        <div class="modal-body">
-          <p>
-            You're viewing YouTube in English (US). You can
-            <a href="#">
-              change this preference below.
-            </a>
-          </p>
-          <p>
-            <a href="#">Learn more</a>
-          </p>
-        </div>
+      <div class="modal-container">
         <input id="lang-close" type="checkbox" />
+        <label for="lang-close" id="lang-close-lab"></label>
+        <div class="lang-close-cover modal">
+          <i class="fa fa-times" aria-hidden="true"></i>
+        </div>
+        <div class="modal">
+          <div class="language-modal white-block">
+            <div class="modal-header">
+              <p>
+                <i class=""></i>
+                <!--fontawesome-->
+                Choose your language.
+              </p>
+            </div>
+            <div class="modal-body">
+              <p>
+                You're viewing YouTube in English (US). You can
+                <a href="#">
+                  change this preference below.
+                </a>
+              </p>
+              <p>
+                <a href="#">Learn more</a>
+              </p>
+            </div>
+          </div>
+        </div>
       </div>
-
       <div class="video-container">
         <div class="waching-area">
           <main class="">
@@ -85,19 +94,21 @@
                   <div>
                     <p>50,066 views</p>
                     <div class="like-dislike">
-                        <div class="like"></div>
-                        <div class="dislike"></div>
+                      <div class="like"></div>
+                      <div class="dislike"></div>
                     </div>
                   </div>
                 </div>
               </div>
               <div class="video-links">
                 <p>
-                  <a href="#"><i class="fas fa-plus"></i> Add to</a> <a href="#"><i class="fas fa-share"></i> Share</a>
+                  <a href="#"><i class="fas fa-plus"></i> Add to</a>
+                  <a href="#"><i class="fas fa-share"></i> Share</a>
                   <a href="#"><i class="fas fa-ellipsis-h"></i> More</a>
                 </p>
                 <p>
-                  <a href=""><i class="fas fa-thumbs-up"></i> 532</a><a href=""><i class="fas fa-thumbs-down"></i> 4</a>
+                  <a href=""><i class="fas fa-thumbs-up"></i> 532</a
+                  ><a href=""><i class="fas fa-thumbs-down"></i> 4</a>
                 </p>
               </div>
             </section>
@@ -117,12 +128,18 @@
                 http://theodinproject.com.
               </p>
               <p class="show-more">
-                <a>SHOW MORE</a>
+                <a for="more-desc">SHOW MORE</a>
               </p>
             </article>
           </main>
           <div class="comments-container white-block">
-            <p><img id="loader" src="./static/loader.gif" alt="loading circle">Loading...</p>
+            <p>
+              <img
+                id="loader"
+                src="./static/loader.gif"
+                alt="loading circle"
+              />Loading...
+            </p>
           </div>
         </div>
 
@@ -212,13 +229,19 @@
       <footer class="white-block">
         <div class="footer-btns">
           <div class="logo footer-logo">
-           <img src="./static/youtube-logo.png" alt="logo" />
+            <img src="./static/youtube-logo.png" alt="logo" />
           </div>
-          <button type="button"><i class="fas fa-language"></i> language ▼</button>
+          <button type="button">
+            <i class="fas fa-language"></i> language ▼
+          </button>
           <button type="button">location ▼</button>
           <button type="button">restricted: <b>Off</b> ▼</button>
-          <button type="button"><i class="fas fa-hourglass-start"></i> History ▼</button>
-          <button type="button"><i class="fas fa-question-circle"></i> Help</button>
+          <button type="button">
+            <i class="fas fa-hourglass-start"></i> History ▼
+          </button>
+          <button type="button">
+            <i class="fas fa-question-circle"></i> Help
+          </button>
         </div>
         <!-- Not sure about navs -->
         <nav class="footer-nav footer-nav-1">
