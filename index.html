@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Document</title>
+    <script src="https://kit.fontawesome.com/671f6231ff.js"></script>
     <link rel="stylesheet" href="normalize.css" />
     <link rel="stylesheet" href="style.css" />
   </head>
@@ -12,17 +13,21 @@
     <div class="page-container">
       <nav class="youtube-nav white-block">
         <div class="logo">
-          <img src="" alt="logo" />
+          <img src="./static/youtube-logo.png" alt="logo" />
         </div>
         <div class="search-area">
-          <input type="text" placeholder="Search" /><button type="button">
-            S
-          </button>
+          <input type="text" placeholder="Search" /><button type="button"><i class="fas fa-search"></i></button>
         </div>
         <div class="icon-area">
-          <img src="" alt="" />
-          <img src="" alt="" />
-          <img src="" alt="" />
+          <div>
+            <i class="fas fa-th"></i>
+          </div>
+          <div>
+            <i class="fas fa-video"></i>
+          </div>
+          <div>
+            <i class="fas fa-bell"></i>
+          </div>
         </div>
       </nav>
 
@@ -115,7 +120,9 @@
               <a>SHOW MORE</a>
             </article>
           </main>
-          <div class="comments-container white-block"></div>
+          <div class="comments-container white-block">
+            <p><img id="loader" src="./static/loader.gif" alt="loading circle">Loading...</p>
+          </div>
         </div>
 
         <aside class="reo-videos white-block">

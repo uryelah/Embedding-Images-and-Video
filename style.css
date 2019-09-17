@@ -22,14 +22,33 @@ body {
 }
 
 .youtube-nav {
-    display: flex;
-    justify-content: space-between;
-    flex-direction: row;
-    
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  padding: 5px 20px;
+}
+
+.logo img {
+  max-height: 35px;
 }
 
 .search-area {
     flex-basis: 50%;
+    display: flex;
+    align-items: center;
+}
+
+.icon-area {
+  display: flex;
+  align-items: center;
+}
+
+.icon-area div {
+  margin-right: 20px;
+}
+
+.icon-area div:last-child {
+  margin-right: 0;
 }
 
 .search-area input, .search-area button {
@@ -51,6 +70,7 @@ body {
     border-left: none;
 }
 
+
 .modal-header {
     color: #fff;
     background-color: #167ac6;
@@ -71,8 +91,17 @@ body {
     text-decoration: none;
 }
 
+.comments-container {
+  text-align: center;
+}
+
 .video-container {
     width: 100%;
+}
+
+#loader {
+  width: 20px;
+  padding-right: 4px;
 }
 
 .video-container, .white-block, .waching-area, .comments-container {
