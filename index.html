@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/671f6231ff.js"></script>
+    <link rel="stylesheet" href="normalize.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="page-container">
+      <nav class="youtube-nav white-block">
+        <div class="logo">
+          <img src="./static/youtube-logo.png" alt="logo" />
+        </div>
+        <div class="search-area">
+          <input type="text" placeholder="Search" /><button type="button">
+            <i class="fas fa-search"></i>
+          </button>
+        </div>
+        <div class="icon-area">
+          <div>
+            <i class="fas fa-th"></i>
+          </div>
+          <div>
+            <i class="fas fa-video"></i>
+          </div>
+          <div>
+            <i class="fas fa-bell"></i>
+          </div>
+        </div>
+      </nav>
+
+      <div class="modal-container">
+        <input id="lang-close" type="checkbox" />
+        <label for="lang-close" id="lang-close-lab"></label>
+        <div class="lang-close-cover modal">
+          <i class="fa fa-times" aria-hidden="true"></i>
+        </div>
+        <div class="modal">
+          <div class="language-modal white-block">
+            <div class="modal-header">
+              <p>
+                <i class=""></i>
+                <!--fontawesome-->
+                Choose your language.
+              </p>
+            </div>
+            <div class="modal-body">
+              <p>
+                You're viewing YouTube in English (US). You can
+                <a href="#">
+                  change this preference below.
+                </a>
+              </p>
+              <p>
+                <a href="#">Learn more</a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="video-container">
+        <div class="waching-area">
+          <main class="">
+            <div class="actual-video white-block">
+              <iframe
+                width="560"
+                height="315"
+                src="https://www.youtube.com/embed/YN27dQ6afyQ"
+                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+              ></iframe>
+            </div>
+            <section class="video-title white-block">
+              <h2>How to survive the apocalipse with an Opossum 2</h2>
+              <div class="video-channel">
+                <div class="vid-subs">
+                  <div class="user-icon">
+                    <img src="./static/user-icon.jpg" alt="user-icon" />
+                  </div>
+                  <div class="user-suscribes">
+                    <p>The Opossum Project</p>
+                    <div>
+                      <p><i class="fab fa-youtube"></i> Subscribe</p>
+                      <p>799</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="video-views">
+                  <div>
+                    <p>50,066 views</p>
+                    <div class="like-dislike">
+                      <div class="like"></div>
+                      <div class="dislike"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="video-links">
+                <p>
+                  <a href="#"><i class="fas fa-plus"></i> Add to</a>
+                  <a href="#"><i class="fas fa-share"></i> Share</a>
+                  <a href="#"><i class="fas fa-ellipsis-h"></i> More</a>
+                </p>
+                <p>
+                  <a href=""><i class="fas fa-thumbs-up"></i> 532</a
+                  ><a href=""><i class="fas fa-thumbs-down"></i> 4</a>
+                </p>
+              </div>
+            </section>
+            <article class="video-desc white-block">
+              <h5>Published on Feb 27, 2014</h5>
+              <p>
+                How do you contribute to open source? In this video, I'll
+                describe the easiest way to make a simple contribution to an
+                open source project -- without using the command line, a text
+                editor, "forking a repo", or even touching Git outside of
+                Github. I'll also describe what kinds of contributions open
+                source software projects are typically looking for. As an
+                example, I use submitting a student solution to a web
+                development exercise from The Odin Project, a free online
+                curriculum for learning web development with Ruby on Rails. You
+                can find more information about that project at
+                http://theodinproject.com.
+              </p>
+              <p class="show-more">
+                SHOW MORE
+              </p>
+            </article>
+          </main>
+          <div class="comments-container white-block">
+            <p>
+              <img
+                id="loader"
+                src="./static/loader.gif"
+                alt="loading circle"
+              />Loading...
+            </p>
+          </div>
+        </div>
+
+        <aside class="reo-videos white-block">
+          <div class="next-videos">
+            <div><p>Up next</p></div>
+            <div>
+              <p>Autoplay <i class="fas fa-info-circle"></i></p>
+            </div>
+          </div>
+          <!--A bunch of videos-->
+          <div class="rec-vid">
+            <div class="thumbnail">
+              <img src="./static/side-vid.jpg" alt="recommended video" />
+            </div>
+            <div class="red-desc">
+              <h3>REST API concepts</h3>
+              <div class="desc">
+                <p>WebConcepts</p>
+                <p>21,2111,001 views</p>
+              </div>
+            </div>
+          </div>
+          <div class="rec-vid">
+            <div class="thumbnail">
+              <img src="./static/side-vid.jpg" alt="" />
+            </div>
+            <div class="red-desc">
+              <h3>REST API concepts</h3>
+              <div class="desc">
+                <p>WebConcepts</p>
+                <p>21,2111,001 views</p>
+              </div>
+            </div>
+          </div>
+          <div class="rec-vid">
+            <div class="thumbnail">
+              <img src="./static/side-vid.jpg" alt="" />
+            </div>
+            <div class="red-desc">
+              <h3>REST API concepts</h3>
+              <div class="desc">
+                <p>WebConcepts</p>
+                <p>21,2111,001 views</p>
+              </div>
+            </div>
+          </div>
+          <div class="rec-vid">
+            <div class="thumbnail">
+              <img src="./static/side-vid.jpg" alt="" />
+            </div>
+            <div class="red-desc">
+              <h3>REST API concepts</h3>
+              <div class="desc">
+                <p>WebConcepts</p>
+                <p>21,2111,001 views</p>
+              </div>
+            </div>
+          </div>
+          <div class="rec-vid">
+            <div class="thumbnail">
+              <img src="./static/side-vid.jpg" alt="" />
+            </div>
+            <div class="red-desc">
+              <h3>REST API concepts</h3>
+              <div class="desc">
+                <p>WebConcepts</p>
+                <p>21,2111,001 views</p>
+              </div>
+            </div>
+          </div>
+          <div class="rec-vid">
+            <div class="thumbnail">
+              <img src="./static/side-vid.jpg" alt="" />
+            </div>
+            <div class="red-desc">
+              <h3>REST API concepts</h3>
+              <div class="desc">
+                <p>WebConcepts</p>
+                <p>21,2111,001 views</p>
+              </div>
+            </div>
+          </div>
+        </aside>
+      </div>
+
+      <footer class="white-block">
+        <div class="footer-btns">
+          <div class="logo footer-logo">
+            <img src="./static/youtube-logo.png" alt="logo" />
+          </div>
+          <button type="button">
+            <i class="fas fa-language"></i> language ▼
+          </button>
+          <button type="button">location ▼</button>
+          <button type="button">restricted: <b>Off</b> ▼</button>
+          <button type="button">
+            <i class="fas fa-hourglass-start"></i> History ▼
+          </button>
+          <button type="button">
+            <i class="fas fa-question-circle"></i> Help
+          </button>
+        </div>
+        <!-- Not sure about navs -->
+        <nav class="footer-nav footer-nav-1">
+          <ul>
+            <li>About</li>
+            <li>Press</li>
+            <li>Copyright</li>
+            <li>Creators</li>
+            <li>Advertise</li>
+            <li>Developers</li>
+          </ul>
+        </nav>
+        <nav class="footer-nav footer-nav-2">
+          <ul>
+            <li>Terms</li>
+            <li>Privacy</li>
+            <li>Policy & Safety</li>
+            <li>Test new features</li>
+          </ul>
+        </nav>
+      </footer>
+    </div>
+  </body>
+</html>
